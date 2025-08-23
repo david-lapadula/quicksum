@@ -20,10 +20,10 @@ document.getElementById("summarizeBtn").addEventListener("click", async () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer YOUR_OPENAI_API_KEY"  // Replace with your actual key
+        "Authorization": "Bearer YOUR_OPENAI"
       },
       body: JSON.stringify({
-        model: "gpt-4",  // or "gpt-3.5-turbo"
+        model: "gpt-4", 
         messages: [
           { role: "system", content: "You are a helpful assistant that summarizes text." },
           { role: "user", content: `Summarize this: ${selectedText}` }
@@ -41,15 +41,3 @@ document.getElementById("summarizeBtn").addEventListener("click", async () => {
     document.getElementById("summary").textContent = "Error during summarization.";
   }
 });
-
-// Go to chrome://extensions.
-
-// Enable "Developer mode".
-
-// Click “Load unpacked” and select your folder.
-
-// Visit any page, highlight some text.
-
-// Click your extension icon → click "Summarize".
-
-// Read the summary in the popup.

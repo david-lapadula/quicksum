@@ -1,34 +1,11 @@
 {
-  "manifest_version": 3,               // Use Manifest V3 (required by latest Chrome)
-  "name": "Text Summarizer",           // The name that shows in the extensions list
-  "version": "1.0",                    // Your extension version
+  "manifest_version": 3,             
+  "name": "QuickSum",         
+  "version": "1.0",                  
   "description": "Summarize highlighted text using OpenAI API.",
   "permissions": ["scripting", "activeTab", "storage"], 
-  // "scripting": lets you inject JavaScript into web pages.
-  // "activeTab": lets you interact with the current tab the user is on.
-  // "storage": lets you save data if needed (not used yet, but useful later).
-
   "host_permissions": ["<all_urls>"],
-  // Allows access to all pages the user visits (needed for selection capture).
-
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
-    // When user clicks the extension icon, it shows popup.html
-    // You can also include an icon (optional)
-  },
-
-  "background": {
-    "service_worker": "background.js"
-    // Registers a background script. Optional here, useful for later features.
-  },
-
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-      // This script will run on all websites.
-      // Right now it’s empty but can be used for future enhancements.
-    }
-  ]
+    "default_popup": "popup.html"
+  }
 }
