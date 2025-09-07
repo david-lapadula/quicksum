@@ -48,10 +48,6 @@ QuickSum is a browser extension designed to help users quickly generate concise 
    - Click the "Summarize" button.
    - The summary will appear in the popup.
 
-**Example:**
-
-![Recording of QuickSum extension popup](recording.gif)
-
 ## Features
 
 - Summarizes any highlighted text on a webpage.
