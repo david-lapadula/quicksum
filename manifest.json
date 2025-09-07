@@ -2,10 +2,14 @@
   "manifest_version": 3,             
   "name": "QuickSum",         
   "version": "1.0",                  
-  "description": "Summarize highlighted text using OpenAI API.",
+  "description": "Summarizes highlighted text using AI.",
   "permissions": ["scripting", "activeTab", "storage"], 
   "host_permissions": ["<all_urls>"],
-  "action": {
-    "default_popup": "popup.html"
+ "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
   }
 }

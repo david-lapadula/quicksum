@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      padding: 20px 16px 16px 16px;
-      width: 320px;
-      background: #f7f9fa;
-      color: #222;
-    }
-    h3 {
-      margin-top: 0;
-      font-size: 1.2em;
-      letter-spacing: 0.5px;
-      color: #2d6cdf;
-      text-align: center;
-    }
-    #summarizeBtn {
-      display: block;
-      margin: 18px auto 0 auto;
-      padding: 10px 24px;
-      background: linear-gradient(90deg, #2d6cdf 60%, #4fa3f7 100%);
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      font-size: 1em;
-      font-weight: 500;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(45, 108, 223, 0.08);
-      transition: background 0.2s, box-shadow 0.2s;
-    }
-    #summarizeBtn:hover {
-      background: linear-gradient(90deg, #1e4fa3 60%, #2d6cdf 100%);
-      box-shadow: 0 4px 16px rgba(45, 108, 223, 0.13);
-    }
-    #summary {
-      margin-top: 18px;
-      padding: 12px;
-      background: #fff;
-      border-radius: 6px;
-      min-height: 48px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      font-size: 0.98em;
-      color: #333;
-      white-space: pre-wrap;
-      word-break: break-word;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
-  <h3>Summarize Selected Text</h3>
+  <h3>Quicksum</h3>
   <button id="summarizeBtn">Summarize</button>
+  <div class="dropdown-row">
+    <div class="dropdown-group">
+      <label for="tone-dropdown">Choose a tone:</label>
+      <select id="tone-dropdown" name="tone">
+        <option value="neutral">Neutral</option>
+        <option value="formal">Formal</option>
+        <option value="friendly">Friendly</option>
+      </select>
+    </div>
+    <div class="dropdown-group">
+      <label for="response-type-dropdown">Choose a response type:</label>
+      <select id="response-type-dropdown" name="type">
+        <option value="summary">Summary</option>
+        <option value="bullet">Bullet</option>
+        <option value="single-sentence">Single sentence</option>
+      </select>
+    </div>
+  </div>
   <div id="summary"></div>
   <script src="popup.js"></script>
 </body>
+
 </html>
