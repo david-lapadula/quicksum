@@ -50,7 +50,7 @@ QuickSum is a browser extension designed to help users quickly generate concise 
 
 **Example:**
 
-![Recording of QuickSum extension popup](recording.mp4)
+![Recording of QuickSum extension popup](recording.gif)
 
 ## Features
 
